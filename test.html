@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ANIME</a></li>
+                    <li><a href="">MANGA</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon">
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card card1">
+                    <div class="down">
+                        <a href="test1.html">
+                            <h5>Class 9th</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe.</p>
+                        </a>
+                    </div>
+                </div>    
+                <div class="card card2">
+                    <a href="test2.html">
+                        <h5>Class 10th</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe.</p>
+                    </a>
+                </div>
+                <div class="card card3">
+                    <div class="down">
+                        <a href="test3.html">
+                            <h5>Class 11th</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card card4">
+                    <a href="test4.html">
+                        <h5>Class 12th</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = [
+                "url('images/pic-1.jpg')",
+                "url('images/pic-3.jpg')",
+                "url('images/pic-7.jpg')",
+                "url('images/pic-5.jpg')"
+            ];
+
+            const cards = document.querySelectorAll('.card');
+
+            // Shuffle the images array
+            images.sort(() => Math.random() - 0.5);
+
+            // Assign shuffled images to the cards
+            cards.forEach((card, index) => {
+                card.style.backgroundImage = images[index];
+            });
+        });
+    </script>
+
+</body>
+</html>

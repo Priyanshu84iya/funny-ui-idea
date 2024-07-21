@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="test4.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ANIME</a></li>
+                    <li><a href="">MANGA</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon">
+        </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="card card1">
+                <a href="https://tinyurl.com/path-creation">
+                    <h5>English</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe.</p>
+                </a>
+            </div>            
+            <div class="card card2">
+                <h5>Hindi</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe.</p>
+            </div>
+            <div class="card card1">
+                <a href="https://tinyurl.com/46yxb748">
+                <h5>Math</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe.</p>
+            </a>
+            </div>
+            <div class="card card2">
+                <a href="https://tinyurl.com/path-creation1">
+                <h5>Physics</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe.</p>
+            </a>
+            </div>
+            <div class="card card5">
+                <a href="https://tinyurl.com/2jm86yfz">
+                <h5>Chemistry</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe.</p>
+            </a>
+            </div>
+            <div class="card card6">
+                <h5>IT</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe.</p>
+            </div>
+            <div class="card card7">
+                <a href="https://tinyurl.com/24rh3uh7">
+                <h5>Business</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe.</p>
+            </a>
+            </div>
+            <div class="card card8">
+                <a href="https://tinyurl.com/u4s47w73">
+                <h5>Ecomomic</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe.</p>
+            </a>
+            </div>
+            <div class="card card9">
+                <a href="https://tinyurl.com/mumk89c5">
+                <h5>Biology</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe.</p>
+            </a>
+            </div>
+            <div class="card card10">
+                <a href="https://tinyurl.com/5d47vcdt">
+                <h5>Accountancy</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, saepe.</p>
+            </a>
+            </div>
+      </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = [
+                "url('images/pic-5.jpg')",
+                "url('images/pic-6.jpg')",
+                "url('images/pic-7.jpg')",
+                "url('images/pic-8.jpg')",
+                "url('images/pic-9.jpg')",
+                "url('images/pic-10.jpg')",
+                "url('images/pic-11.jpg')",
+                "url('images/pic-12.jpg')",
+                "url('images/pic-13.jpg')",
+                "url('images/pic-14.jpg')"
+            ];
+
+            const cards = document.querySelectorAll('.card');
+
+            // Shuffle the images array
+            images.sort(() => Math.random() - 0.5);
+
+            // Assign shuffled images to the cards
+            cards.forEach((card, index) => {
+                card.style.backgroundImage = images[index];
+            });
+        });
+    </script>
+
+</body>
+</html>
